@@ -1,0 +1,145 @@
+/* input,
+label  */
+
+* {
+  font-family: Rubic, sans-serif;
+}
+
+main {
+  align-content: center;
+}
+
+.foodChoice {
+  font-size: 1.2rem;
+  display: block;
+  margin-bottom: 0.6rem;
+}
+
+.nutriGramms,
+.carbs {
+  display: inline-block;
+  width: 4rem;
+}
+
+.foodCart {
+  display: flex;
+  flex-wrap: wrap;
+  /* max-width: 24rem; */
+  /* border-color: red;
+  border-style: solid;
+  border-width: 3px; */
+}
+
+.gramms {
+  font-size: 1.2rem;
+  display: inline-block;
+  width: 8rem;
+}
+
+.nutriGramms {
+  font-size: 1rem;
+  margin-bottom: 0.6rem;
+  align-content: flex-end;
+}
+
+.foodForm {
+  border-color: blueviolet;
+  border-width: 0.2rem;
+  border-style: solid;
+  background-color: white;
+  width: max-content;
+  display: block;
+  border-radius: 2rem;
+  /* margin: 0 auto; */
+  text-align: center;
+  margin: 0 auto;
+  /* margin: 0 auto; */
+}
+
+.totalCard {
+  margin: 0 auto;
+  height: 4rem;
+  width: 28rem;
+  /* max-width: 24rem; */
+  border-color: rgb(67, 173, 173);
+  border-style: solid;
+  border-width: 3px;
+  text-align: center;
+  border-radius: 1rem;
+  background-color: none;
+  align-content: center;
+  font-size: 1.5rem;
+}
+
+.myChart {
+  width: 30rem;
+  height: 26rem;
+  margin: 0 auto;
+}
+
+ul {
+  display: inline-block;
+  flex-wrap: wrap;
+  align-content: space-between;
+  margin-top: 0rem;
+  /* padding-left: 0; */
+}
+li {
+  /* display: inline-block; */
+  flex-wrap: wrap;
+  align-content: space-between;
+  list-style-type: disc;
+  float: left;
+  padding-right: 0.5rem;
+  /* padding-left: 1rem; */
+  margin-right: 2.2rem;
+}
+
+ul li {
+  padding-left: 1px;
+  padding-right: 1px;
+}
+
+h2,
+p {
+  margin: 0.1rem;
+}
+
+/* .ulFood {
+} */
+ul li::marker {
+  color: red;
+  font-size: 2rem;
+}
+
+li:last-child {
+  margin-right: 0px;
+}
+
+.carbLi::marker {
+  color: rgba(255, 159, 64, 1);
+  font-size: 2rem;
+}
+.fatLi::marker {
+  color: rgba(153, 102, 255, 1);
+  font-size: 2rem;
+}
+.protLi::marker {
+  color: rgb(67, 173, 173);
+
+  font-size: 2rem;
+}
+
+span {
+  position: relative;
+  left: -0.8rem;
+}
+
+/* .inpData {
+  width: 16rem;
+} */
+.inpDataDiv {
+  width: 26rem;
+  float: inline-end;
+  /* display: inline; */
+}
