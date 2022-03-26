@@ -76,8 +76,8 @@ const addFood = (event) => {
   // console.log(carbs);
   // const li = document.createElement("li");
 
-  document.getElementById("totalCalCard").innerHTML = `${energyG} kcal.`;
-  document.getElementById("totalWeighCard").innerHTML = `${foodWeightG} g.`;
+  document.getElementById("totalCalCard").innerHTML = `:    ${energyG} kcal.`;
+  document.getElementById("totalWeighCard").innerHTML = `:    ${foodWeightG} g.`;
 
   // li.textContent = text;
   // ul.appendChild(li);

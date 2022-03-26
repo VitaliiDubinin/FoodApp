@@ -10,94 +10,60 @@
     <link href="https://fonts.googleapis.com/css2?family=Heebo:wght@300&family=Roboto:wght@100&family=Rubik&display=swap" rel="stylesheet" />
   </head>
   <body>
-
     <main>
-    <header><h1>Nutrition and Energy</h1></header>
-    <form class="inpData">
-      <h2>Add food</h2>
-      <div>
-        <label class="foodChoice" for="foodChoice">Food name</label>
-        <select class="foodChoice" name="foodChoice" id="foodChoice">
-          <option value="">Please select:</option>
-          <option value="water">Water</option>
-          <option value="juce">Juce</option>
-          <option value="orange">Orange</option>
-          <option value="steak">Steak</option>
-          <option value="apple">Apple</option>
-          <option value="poke">Poke</option>
-          <option value="salmon">Salmon</option>
-        </select>
-      </div>
-      <div class="inpDataDiv">
-     
-        <label class="gramms" for="weight">Weight</label>
-        <input
-        class="nutriGramms"
-        type="number"
-        id="weight"
-        placeholder="0" min="0"
-        oninput="validity.valid||(value='');" />g.
-    </div>
-      <div>
-     
-        <label class="gramms" for="carbs">Carbs/100g</label>
-        <input
-        class="nutriGramms"
-        type="number"
-        id="carbs"
-        placeholder="0" min="0"
-        oninput="validity.valid||(value='');" />g.
-    </div>
-    <div>
-        <label class="gramms" for="protein">Protein/100g</label>
-        <input
-        class="nutriGramms"
-        type="number"
-        id="protein"
-        placeholder="0" min="0" oninput="validity.valid||(value='');" />g.
-      
-    </div>
-    <div>
-        <label class="gramms" for="fat">Fat/100g</label>
-        <input
-        class="nutriGramms"
-        type="number"
-        id="fat"
-        placeholder="0" min="0" oninput="validity.valid||(value='');" />g.
-      
-    </div>
+      <header><h1>Nutrition and Energy</h1></header>
+      <form class="inpData">
+        <h2>Add food</h2>
+        <div>
+          <label class="foodChoice" for="foodChoice">Food name</label>
+          <select class="foodChoice" name="foodChoice" id="foodChoice">
+            <option value="">Please select:</option>
+            <option value="water">Water</option>
+            <option value="juce">Juce</option>
+            <option value="orange">Orange</option>
+            <option value="steak">Steak</option>
+            <option value="apple">Apple</option>
+            <option value="poke">Poke</option>
+            <option value="salmon">Salmon</option>
+          </select>
+        </div>
+        <div class="inpDataDiv">
+          <label class="gramms" for="weight">Weight</label>
+          <input class="nutriGramms" type="number" id="weight" placeholder="0" min="0" oninput="validity.valid||(value='');" />g.
+        </div>
+        <div>
+          <label class="gramms" for="carbs">Carbs/100g</label>
+          <input class="nutriGramms" type="number" id="carbs" placeholder="0" min="0" oninput="validity.valid||(value='');" />g.
+        </div>
+        <div>
+          <label class="gramms" for="protein">Protein/100g</label>
+          <input class="nutriGramms" type="number" id="protein" placeholder="0" min="0" oninput="validity.valid||(value='');" />g.
+        </div>
+        <div>
+          <label class="gramms" for="fat">Fat/100g</label>
+          <input class="nutriGramms" type="number" id="fat" placeholder="0" min="0" oninput="validity.valid||(value='');" />g.
+        </div>
 
-
-      </div>
-
-
-      <button class="but" id="addBut">Add</button>
-    </form>
+        <button class="but" id="addBut">Add</button>
+      </form>
       <div class="myChart">
-       <canvas id="myChart" width="400" height="300"></canvas>
+        <canvas id="myChart" width="400" height="300"></canvas>
       </div>
 
       <!-- <div class="foodForm" id="foodForm"> -->
       <div id="foodForm">
         <h1>Log</h1>
-         <div class="totalCard">
-          Total calories logged: <spam id="totalCalCard"></spam><br>
-          Total weight of food: <spam id="totalWeighCard"></spam>
-         </div>
-          <ul></ul>
-            <!-- <div id="finalDiv"></div> -->
-     </div>
-         <section id="foodCart" class="foodCart">
-     
-     
-     
-     
-          <div id="finalDiv"></div>
-
-         </section>
-
+        <div class="totalCard">
+          Total calories logged: <span id="totalCalCard"></span><br />
+          Total weight of food: <span id="totalWeighCard"></span>
+        </div>
+        <ul></ul>
+        <!-- <div id="finalDiv"></div> -->
+      </div>
+      <section id="foodCart" class="foodCart">
+        <div id="finalDiv"></div>
+      </section>
     </main>
-
 
     <!-- <button class="but" id="clearBut">ClearAllData</button> -->
     <script type="module" src="./FoodAppVD.js"></script>
